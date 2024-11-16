@@ -118,6 +118,6 @@ app.delete('/transactions/:id', async (req, res) => {
 
 
 
-app.listen(port, () => {
-  console.log(`Servidor rodando na porta ${port}`)
-})
+app.listen(port, '0.0.0.0', () => {
+  console.log(`Servidor rodando na porta ${port}`);
+});
